@@ -53,7 +53,7 @@ pipe.enable_model_cpu_offload()
 
 set_seed(42)
 
-root_path = os.path.join("/vip_media/yetian/SST/ImageStone/data", f"{args.method}_{args.start}_{args.end}", "total_150", args.tag)
+root_path = os.path.join("/vip_media/yetian/SST/ImageStone/data", f"{args.method}_{args.pipeline}_{args.start}_{args.end}", "total_150", args.tag)
 
 if not os.path.exists(root_path):
     os.makedirs(root_path)
